@@ -1,5 +1,37 @@
-header 
-    background-image: url('../images/bg-header-desktop.png')
-    background-size: cover
-    background-repeat: no-repeat
+header
     width: 100%
+    display: flex
+    align-items: center
+    flex-direction: column
+    img
+        width: 96px
+        margin-top: 96px
+        margin-bottom: 52px
+    h1
+        font-size: 29px
+        opacity: .7
+        margin-bottom: 18px
+    p
+        opacity: .4
+        margin-bottom: 35px
+    .btn
+        .btns
+            padding: 13px
+            cursor: pointer
+            border: none 
+            width: 255px
+            color: #fff
+            font-size: 15px
+            font-weight: 600
+            border-radius: 60px 60px 60px 60px
+            &:hover
+                opacity: .7
+        .ios 
+            background: #26baa4
+            margin-right: 10px
+            box-shadow: 0 3px 0 #22a793
+        .mac
+            background: #6173ff
+            margin-left: 10px
+            box-shadow: 0 3px 0 #5767e5
+

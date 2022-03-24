@@ -4,12 +4,45 @@
   box-sizing: border-box; }
 
 body {
-  font-family: "Bai Jamjuree", sans-serif; }
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
 
 header {
-  background-image: url("../images/bg-header-desktop.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  header img {
+    width: 96px;
+    margin-top: 96px;
+    margin-bottom: 52px; }
+  header h1 {
+    font-size: 29px;
+    opacity: 0.7;
+    margin-bottom: 18px; }
+  header p {
+    opacity: 0.4;
+    margin-bottom: 35px; }
+  header .btn .btns {
+    padding: 13px;
+    cursor: pointer;
+    border: none;
+    width: 255px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 60px 60px 60px 60px; }
+    header .btn .btns:hover {
+      opacity: 0.7; }
+  header .btn .ios {
+    background: #26baa4;
+    margin-right: 10px;
+    box-shadow: 0 3px 0 #22a793; }
+  header .btn .mac {
+    background: #6173ff;
+    margin-left: 10px;
+    box-shadow: 0 3px 0 #5767e5; }
 
 /*# sourceMappingURL=styles.css.map */
