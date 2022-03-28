@@ -56,7 +56,8 @@ header {
     margin: 0 340px;
     text-align: center;
     opacity: 0.4;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    /*---- Primera seccion ---- */ }
   .main .snippets .compu {
     display: flex;
     justify-content: space-between; }
@@ -158,12 +159,41 @@ footer {
     text-decoration: none;
     color: #000;
     opacity: 0.7;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-weight: 600; }
+    footer a:hover {
+      color: #22a793; }
   footer .sociales {
     margin-bottom: 70px;
     margin-top: 30px; }
-    footer .sociales img {
-      width: 30px;
-      margin: 0 15px; }
+    footer .sociales a {
+      display: inline-block;
+      font-size: 35px;
+      margin: 0 10px; }
+
+@media screen and (max-width: 1366px) {
+  header {
+    margin-bottom: 100px; }
+    header img {
+      width: 90px;
+      margin-top: 70px; }
+    header .btn .btns {
+      width: 230px; }
+
+  .main .seccion .descripcion {
+    margin: 0 60px;
+    margin-bottom: 50px; }
+  .main .snippets .compu .imag img {
+    margin-left: 90px;
+    width: 95%; }
+  .main .snippets .text .text2 {
+    width: 35%;
+    margin: 10px 200px 90px 200px; }
+    .main .snippets .text .text2 h3 {
+      font-size: 21px; }
+    .main .snippets .text .text2 p {
+      font-size: 17px; }
+  .main .clipboard .btn .btns {
+    width: 230px; } }
 
 /*# sourceMappingURL=styles.css.map */
