@@ -151,28 +151,40 @@ header {
 footer {
   background: #eceef0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   align-items: center; }
   footer img {
     width: 50px;
     margin-top: 50px;
     margin-bottom: 60px; }
-  footer a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    opacity: 0.7;
-    margin-bottom: 30px;
-    font-weight: 600; }
-    footer a:hover {
-      color: #22a793; }
+  footer .contacto {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+    footer .contacto a {
+      display: inline-block;
+      text-decoration: none;
+      color: #000;
+      opacity: 0.7;
+      margin-bottom: 30px;
+      font-weight: 600; }
+      footer .contacto a:hover {
+        color: #22a793; }
   footer .sociales {
     margin-bottom: 70px;
     margin-top: 30px; }
     footer .sociales a {
       display: inline-block;
       font-size: 35px;
-      margin: 0 10px; }
+      margin: 0 10px;
+      color: #000;
+      opacity: 0.7; }
+      footer .sociales a:hover {
+        color: #22a793; }
 
 @media screen and (max-width: 1440px) {
   header {
@@ -241,5 +253,77 @@ footer {
   footer .sociales {
     margin-bottom: 60px;
     margin-top: 20px; } }
+@media screen and (max-width: 720px) {
+  header .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header .btn .btns {
+      margin: 10px 0;
+      width: 170px;
+      font-size: 14px; }
+
+  .main .clipboard .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main .clipboard .btn .btns {
+      margin: 10px 0;
+      width: 170px;
+      font-size: 14px; }
+
+  footer {
+    flex-direction: row; }
+    footer img {
+      margin: 20px 5px 20px 5px;
+      /* -top - right- bottom- left */ }
+    footer .contacto {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center; }
+      footer .contacto a {
+        margin: 0 10px; }
+    footer .sociales {
+      margin: 20px 5px 20px 5px; }
+      footer .sociales a {
+        margin: 0 5px; } }
+@media screen and (max-width: 375px) {
+  header img {
+    width: 70px; }
+  header h1 {
+    font-size: 20px; }
+  header p {
+    font-size: 15px; }
+  header .btn .btns {
+    font-size: 13px;
+    width: 160px; }
+
+  .main .seccion .titulo {
+    font-size: 19px; }
+  .main .seccion .descripcion {
+    font-size: 15px; }
+  .main .snippets .compu .text .text2 {
+    width: 100%; }
+    .main .snippets .compu .text .text2 .card2 {
+      width: 100%; }
+      .main .snippets .compu .text .text2 .card2 h3 {
+        font-size: 20px; }
+      .main .snippets .compu .text .text2 .card2 p {
+        text-align: center;
+        font-size: 16px; }
+  .main .workflow .icon {
+    margin-bottom: 50px; }
+    .main .workflow .icon .card {
+      width: 100%;
+      margin: 15px 20px; }
+      .main .workflow .icon .card img {
+        margin-bottom: 20px; }
+
+  footer {
+    flex-direction: column; }
+    footer .contacto {
+      flex-direction: column; }
+      footer .contacto a {
+        margin-bottom: 15px; } }
 
 /*# sourceMappingURL=styles.css.map */
