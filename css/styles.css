@@ -81,7 +81,8 @@ header {
           font-size: 18px; }
   .main .access {
     text-align: center;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    margin-top: 70px; }
     .main .access img {
       width: 38%;
       filter: drop-shadow(0px 25px 15px rgba(0, 0, 0, 0.4)); }
@@ -270,23 +271,7 @@ footer {
     .main .clipboard .btn .btns {
       margin: 10px 0;
       width: 170px;
-      font-size: 14px; }
-
-  footer {
-    flex-direction: row; }
-    footer img {
-      margin: 20px 5px 20px 5px;
-      /* -top - right- bottom- left */ }
-    footer .contacto {
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: center; }
-      footer .contacto a {
-        margin: 0 10px; }
-    footer .sociales {
-      margin: 20px 5px 20px 5px; }
-      footer .sociales a {
-        margin: 0 5px; } }
+      font-size: 14px; } }
 @media screen and (max-width: 375px) {
   header img {
     width: 70px; }
